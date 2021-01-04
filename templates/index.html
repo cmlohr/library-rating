@@ -1,0 +1,20 @@
+{% extends "bootstrap/base.html" %}
+    {% block styles %}
+    {{super()}}
+<link rel="stylesheet"
+      href="{{url_for('static', filename='styles.css')}}">
+{% endblock %}
+{% block title %}The Archive{% endblock %}
+{% block content %}
+<h1 class="landing-title">The Archive</h1>
+{% if archive == []: %}
+<p>This Archive is empty.</p>
+{% endif %}
+    <ul>
+        {% for story in archive %}
+        <li>{{story.title}} - {{story.url}} - {{story.author}} - {{story.rating}}/10</li>
+        {% endfor %}
+    </ul>
+    
+<a type="button" class="front-btn btn btn-warning bg-light btn-lg" href="{{ url_for('add') }}">Add New Story</a>
+{% endblock %}

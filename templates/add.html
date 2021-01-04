@@ -1,0 +1,20 @@
+{% extends "bootstrap/base.html" %}
+    {% block styles %}
+    {{super()}}
+<link rel="stylesheet"
+      href="{{url_for('static', filename='styles.css')}}">
+{% endblock %}
+{% block title %}Add Story{% endblock %}
+{% block content %}
+    <form class="cust-align" action="{{ url_for('add') }}" method="POST">
+        <label>Story Name</label>
+        <input name="title" type="text"> <br>
+        <label>URL</label>
+        <input name="url" type="text"> <br>
+        <label>Author(s)</label>
+        <input name="author" type="text"> <br>
+        <label>Rating</label>
+        <input name="rating" type="text"> <br>
+        <button class="btn btn-success btn-sm" type="submit">Add Story</button>
+    </form>
+{% endblock %}

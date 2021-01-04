@@ -1,0 +1,24 @@
+html, body {
+    height: 100%;
+}
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #191919;
+    color: #eeeeee;
+    text-align: center;
+}
+.cust-align {
+    text-align: right;
+}
+.front-btn {
+    color: #191919;
+}
+.landing-title {
+    text-decoration: underline;
+}

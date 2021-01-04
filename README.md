@@ -1,1 +1,2 @@
 library-rating
+This is a work in progress for a larger project.  Right now its functions are incomplete however the basic SQLite is functional, adding SQAlchemy is my next step.  As of now the program stores story data on each instance, the database is not connected yet.
