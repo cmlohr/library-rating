@@ -5,11 +5,10 @@ html {
     display: table;
     margin: auto;
 }
-
 body {
     display: table-cell;
     vertical-align: middle;
-    background-color: #191919;
+    background-color: #30475e;
     color: #eeeeee;
     text-align: center;
 }
@@ -17,8 +16,55 @@ body {
     text-align: right;
 }
 .front-btn {
+    background-color: #191919;
+    color: #eeeeee;
+}
+.front-btn:hover {
+    background-color: #eeeeee;
     color: #191919;
 }
 .landing-title {
-    text-decoration: underline;
+    text-decoration: underline #f05454;
+    color: #e8e8e8;
+}
+.cust-field {
+    color: #191919;
+}
+.landing-list {
+    list-style-type: none;
+    text-align: right;
+    background: #222831;
+    color: #e8e8e8;
+    padding: 0;
+
+}
+.rating-btn {
+    border-radius: 0;
+    color: #191919;
+    background-color: #dddddd;
+    border: 1px solid #dddddd;
+}
+.rating-btn:hover {
+    color: #dddddd;
+    background-color: #191919;
+    border: 1px solid #dddddd;
+}
+.dlt-btn {
+    border-radius: 0;
+}
+.dlt-btn:hover {
+    background-color: #191919;
+    border: 1px solid #dddddd;
+}
+.add-form {
+    background-color: #222831;
+    padding: 10px;
+}
+.change-rating-btn {
+    background-color: #111d5e;
+    color: #eeeeee;
+}
+.change-rating-btn:hover {
+    background-color: #eeeeee;
+    color: #191919;
 }

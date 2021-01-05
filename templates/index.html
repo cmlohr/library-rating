@@ -10,11 +10,12 @@
 {% if archive == []: %}
 <p>This Archive is empty.</p>
 {% endif %}
-    <ul>
+    <ul class="landing-list">
         {% for story in archive %}
-        <li>{{story.title}} - {{story.url}} - {{story.author}} - {{story.rating}}/10</li>
+        <li>{{story.title}} - {{story.url}} - {{story.author}} - {{story.rating}}/10 - <a type="button" class="rating-btn btn btn-success btn-sm" href="{{ url_for('edit', id=story.id) }}">Edit Rating</a><a type="button" class="dlt-btn btn btn-dark btn-sm" href="{{ url_for('delete', id=story.id) }}">❌</a></li>
         {% endfor %}
     </ul>
-    
-<a type="button" class="front-btn btn btn-warning bg-light btn-lg" href="{{ url_for('add') }}">Add New Story</a>
+    <a  href="{{ url_for('add') }}">
+<button type="button" class="front-btn btn btn-block">Add New Story</button>
+        </a>
 {% endblock %}

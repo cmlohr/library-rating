@@ -1,0 +1,16 @@
+{% extends "bootstrap/base.html" %}
+    {% block styles %}
+    {{super()}}
+<link rel="stylesheet"
+      href="{{url_for('static', filename='styles.css')}}">
+{% endblock %}
+{% block title %}Rating Edit{% endblock %}
+{% block content %}
+<h1 class="landing-title">Rating Edit</h1>
+<form class="add-form" action="{{ url_for('edit') }}" method="POST">
+    <p>Story Title: {{story.title}}</p>
+    <input hidden="hidden" name="id" value="{{story.id}}">
+    <input class="cust-field" name="rating" type="text" placeholder="New Rating"><br>
+    <button class="change-rating-btn btn btn-sm btn-block" type="submit">Change Rating</button>
+</form>
+{% endblock %}

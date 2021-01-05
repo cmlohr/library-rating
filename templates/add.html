@@ -6,15 +6,16 @@
 {% endblock %}
 {% block title %}Add Story{% endblock %}
 {% block content %}
-    <form class="cust-align" action="{{ url_for('add') }}" method="POST">
+<h1 class="landing-title">Add Story</h1>
+    <form class="add-form cust-align" action="{{ url_for('add') }}" method="POST">
         <label>Story Name</label>
-        <input name="title" type="text"> <br>
+        <input class="cust-field" name="title" type="text"> <br>
         <label>URL</label>
-        <input name="url" type="text"> <br>
+        <input class="cust-field" name="url" type="text"> <br>
         <label>Author(s)</label>
-        <input name="author" type="text"> <br>
+        <input class="cust-field" name="author" type="text"> <br>
         <label>Rating</label>
-        <input name="rating" type="text"> <br>
-        <button class="btn btn-success btn-sm" type="submit">Add Story</button>
+        <input class="cust-field" name="rating" type="text"> <br>
+        <button class="btn btn-success btn-sm btn-block" type="submit">Add Story</button>
     </form>
 {% endblock %}
