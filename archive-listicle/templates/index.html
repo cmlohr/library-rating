@@ -1,0 +1,46 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+{% endblock %}
+
+{% block title %}Top 10 Stories{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1 class="heading">Top 10 Stories</h1>
+  <p class="description">These are the current top 10 stories in the Archive.</p>
+   
+  <div class="card" >
+    <div class="front" style="background-image: url('https://yalebooks.yale.edu/sites/default/files/styles/book_jacket/public/imagecache/external/0ebadfc5926da41dfff2c1fa92a96916.jpg?itok=1DljwPnW');">
+        <p class="large">1</p>
+    </div>
+    <div class="back">
+      <div>
+    <div class="title">Beowulf <span class="release_date">(975-1025)</span></div>
+        <div class="rating">
+            <label>7.5</label>
+          <i class="fas fa-star star"></i>
+        </div>
+          <p class="review">"The greatest epic!"</p>
+        <p class="overview">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem donec massa sapien faucibus et molestie ac feugiat. Et ultrices neque ornare aenean euismod elementum nisi quis. Nulla aliquet enim tortor at auctor urna nunc. Sem fringilla ut morbi tincidunt augue. Tristique risus nec feugiat in fermentum posuere urna. Amet volutpat consequat mauris nunc. In massa tempor nec feugiat. Lectus arcu bibendum at varius. Nulla aliquet enim tortor at auctor urna. Nunc scelerisque viverra mauris in aliquam sem fringilla. Cursus mattis molestie a iaculis. Fermentum iaculis eu non diam phasellus vestibulum lorem sed risus. Condimentum lacinia quis vel eros donec ac odio.
+        </p>
+
+        <a href="#" class="button">Update</a>
+        <a href="#" class="button delete-button">Delete</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container text-center add">
+<a href="#" class="button">Add Story</a>
+</div>
+
+{% endblock %}
