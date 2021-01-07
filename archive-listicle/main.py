@@ -70,7 +70,10 @@ class RateStory(FlaskForm):
 
 @app.route("/")
 def home():
-    listicle = TopTen.query.all()
+    listicle = TopTen.query.order_by(TopTen.rating).all()
+    for story in range(len(listicle)):
+        listicle[story].ranking = len(listicle) - story
+    db.session.commit()
     return render_template("index.html", listicle=listicle)
 
 
