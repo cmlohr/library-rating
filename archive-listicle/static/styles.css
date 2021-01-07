@@ -26,6 +26,7 @@
 	 align-items: center;
 	 flex-wrap: wrap;
 	 max-width: 1500px;
+	 color: #f1f1f1;
 }
  p.overview {
 	 font-size: 12px;
@@ -36,7 +37,7 @@
 }
  .heading {
 	 width: 100%;
-	 margin-right: 1rem;
+	 margin-right: 0rem;
 	 text-align: center;
 	 font-weight: 900;
 	 font-size: 1.618rem;
@@ -50,15 +51,17 @@
 	 color: #f1f1f1;
 
 }
-
+.editor-description {
+text-align: center;
+}
  .description {
 	 width: 100%;
 	 margin-top: 0;
-
 	 margin-bottom: 3rem;
 	 color: #f1f1f1;
 	 text-align: center;
 }
+
  .card {
 	 color: inherit;
 	 cursor: pointer;
